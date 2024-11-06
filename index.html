@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime_World_for Beginners</title>
+    <link rel="icon" href="https://cdn.dribbble.com/userupload/14650825/file/original-53303f4170ae175fd45f944f519d5d76.png?resize=400x0" type="image/png">
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-slate-900 grid md:max-xl:flex">
+    <nav class="bg-white flex justify-between items-center p-3">
+      <!-- Logo -->
+      <div class="text-3xl text-blue-950">
+        Anime.<span class="text-blue-600">Saga</span>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex gap-6 items-center font-semibold">
+        <ul class=" flex gap-4 items-center">
+          <li class=" min-h-3 bg-blue-500 p-2 text-white rounded hover:bg-blue-600">Home</li>
+          <li class= "h-9 w-16 bg-blue-500 p-2 text-white rounded hover:bg-blue-600">About</li>
+          <li class="h-9 w-24 bg-blue-500 p-2 text-white rounded hover:bg-blue-600">Contact Us</li>
+        </ul>
+        <input
+          class="border border-gray-300 rounded-lg px-3 py-1 outline-none focus:border-blue-500""
+          type="text"
+          placeholder="Search"
+        />
+        <button class="max-w-20 bg-blue-500 px-4 py-2 text-white rounded hover:bg-blue-600">Search</button>
+      </div>
+
+      <!-- Mobile Menu Icon -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-4xl focus:outline-none">
+          &#8801;
+        </button>
+      </div>
+    </nav>
+    <div id="results" class="flex flex-wrap justify-center mt-4"></div>
+
+
+
+    <!-- Mobile Dropdown Menu -->
+    <div
+      id="mobile-menu"
+      class="md:hidden bg-white w-full hidden flex-col items-start p-4 space-y-3 border-t border-gray-200"
+    >
+      <ul class="flex flex-col gap-4">
+        <li class="bg-blue-500 p-2 text-white rounded w-full text-center">
+          Home
+        </li>
+        <li class="bg-blue-500 p-2 text-white rounded w-full text-center">
+          About
+        </li>
+        <li class="bg-blue-500 p-2 text-white rounded w-full text-center">
+          Contact Us
+        </li>
+      </ul>
+      <input
+        class="border-2 border-black rounded-lg px-2 py-1 w-full"
+        type="text"
+        placeholder="Search"
+      />
+      <button class="bg-blue-500 w-full p-2 text-white rounded">Search</button>
+    </div>
+
+
+<div class="container mx-auto p-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+    <!--1 card-->
+
+    <div
+      class="p-6 max-w-sm mx-auto bg-white md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div>
+        <img
+          class="rounded"
+          src="https://4kwallpapers.com/images/walls/thumbs/18712.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <div class="text-2xl font-medium text-black pt-5">
+          Nezuko Kamado
+          <p class="text-slate-500 text-base">
+            "Nezuko Kamado, a demon with human emotions intact, fights to
+            protect her brother Tanjiro, displaying immense strength,
+            resilience, and loyalty despite her transformation."
+          </p>
+          <button  class="bg-slate-400 rounded-md mt-4 p-1 text-base hover:text-slate-700">
+            <a href="https://www.imdb.com/title/tt9335498/" target="_blank">Read More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--2 card-->
+    <div
+      class="p-6 max-w-sm mx-auto h-max bg-white shadow-xl md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div>
+        <img
+          class="rounded"
+          src="https://4kwallpapers.com/images/walls/thumbs/18503.png"
+          alt=""
+        />
+      </div>
+     
+      <div>
+
+        <div class="text-2xl font-medium text-black pt-5">
+          Kakahsi Hatake
+          <p class="text-slate-500 text-base">
+            "Kakashi Hatake, the enigmatic, skilled ninja of Konoha, mentors
+            Team 7 with wisdom, unmatched skill, and his unique Sharingan
+            eye. Known for his calm demeanor and powerful techniques, he
+            embodies resilience and loyalty to his village."
+          </p>
+          <button
+            class="bg-slate-400 rounded-md mt-4 p-1 text-base hover:text-slate-700"
+          >
+          <a href="https://naruto.fandom.com/wiki/Kakashi_Hatake" target="_blank">Read More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--3 card-->
+    <div
+      class="p-6 max-w-sm mx-auto bg-white h-maxh-max shadow-xl md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div>
+        <img
+          class="rounded"
+          src="https://4kwallpapers.com/images/walls/thumbs_3t/17045.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <div class="text-2xl font-medium text-black pt-5">
+          Zenitsu Agatsuma Lightning Strike
+          <p class="text-slate-500 text-base">
+            "Zenitsu Agatsuma, a Demon Slayer, wields his lightning-fast
+            techniques with incredible speed and power. Despite his
+            cowardice, he displays immense bravery when protecting loved
+            ones."
+          </p>
+          <button
+            class="bg-slate-400 rounded-md mt-4 p-1 text-base hover:text-slate-700"
+          >
+           <a href="https://kimetsu-no-yaiba.fandom.com/wiki/Thunder_Breathing" target="_blank">Read More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--4 card-->
+    <div
+      class="p-6 max-w-sm mx-auto bg-white h-maxh-max shadow-xl md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div>
+        <img
+          class="rounded"
+          src="https://4kwallpapers.com/images/walls/thumbs/18690.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <div class="text-2xl font-medium text-black pt-5">
+          Sage Mode Naruto
+          <p class="text-slate-500 text-base">
+            "Sage Mode Naruto harnesses natural energy to amplify his
+            strength, speed, and sensory abilities, enabling powerful
+            attacks and heightened perception in battle, showing immense
+            resilience."
+          </p>
+          <button
+            class="bg-slate-400 rounded-md mt-4 p-1 text-base hover:text-slate-700"
+          >
+          <a href="https://thenarutofanon.fandom.com/wiki/Sage_Mode" target="_blank">Read More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--5 card-->
+    <div
+      class="p-6 max-w-sm mx-auto bg-white h-maxh-max shadow-xl md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div>
+        <img
+          class="rounded"
+          src="https://4kwallpapers.com/images/walls/thumbs_3t/18713.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <div class="text-2xl font-medium text-black pt-5">
+          Berserk Knight
+          <p class="text-slate-500 text-base">
+            "The Berserk Knight, a powerful warrior in dark armor, fights
+            with uncontrollable rage, unmatched strength, and relentless
+            determination, embodying fury and tragic purpose."
+          </p>
+          <button
+            class="bg-slate-400 rounded-md mt-4 p-1 text-base hover:text-slate-700"
+          >
+          <a href="https://berserk.fandom.com/wiki/Skull_Knight" target="_blank">Read More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--6 card-->
+    <div
+      class="p-6 max-w-sm mx-auto bg-white h-maxh-max shadow-xl md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div>
+        <img
+          class="rounded"
+          src="https://4kwallpapers.com/images/walls/thumbs_3t/17599.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <div class="text-2xl font-medium text-black pt-5">
+          Tanjiro Kamado
+          <p class="text-slate-500 text-base">
+            "Tanjiro Kamado, a compassionate Demon Slayer, wields his
+            Nichirin Blade with skill and determination, striving to avenge
+            his family and cure his sister Nezuko’s demon curse."
+          </p>
+          <button
+            class="bg-slate-400 rounded-md mt-4 p-1 text-base hover:text-slate-700"
+          >
+          <a href="https://kimetsu-no-yaiba.fandom.com/wiki/Tanjiro_Kamado" target="_blank">Read More</a>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <!--7 card-->
+    <div
+      class="p-6 max-w-sm mx-auto bg-white h-max shadow-xl md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div>
+        <img
+          class="rounded"
+          src="https://4kwallpapers.com/images/walls/thumbs_3t/18381.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <div class="text-2xl font-medium text-black pt-5">
+          Demon Slayer
+          <p class="text-slate-500 text-base">
+            "Demon Slayer" follows Tanjiro Kamado, who becomes a Demon
+            Slayer to avenge his family and save his sister Nezuko from her
+            demon transformation, showcasing courage and friendship.
+          </p>
+          <button
+            class="bg-slate-400 rounded-md mt-4 p-1 text-base hover:text-slate-700"
+          >
+          <a href="https://demonslayer-anime.com/" target="_blank">Read More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--8 card-->
+
+    <div
+      class="p-6 max-w-sm mx-auto bg-white h-max shadow-xl md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div>
+        <img
+          class="rounded"
+          src="https://4kwallpapers.com/images/walls/thumbs_3t/19342.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <div class="text-2xl font-medium text-black pt-5">
+          One Piece
+          <p class="text-slate-500 text-base">
+            "One Piece" follows Monkey D. Luffy and his crew in their quest
+            to find the legendary treasure, exploring vast seas, forging
+            friendships, and battling powerful foes.
+          </p>
+          <button
+            class="bg-slate-400 rounded-md mt-4 p-1 text-base hover:text-slate-700"
+          >
+          <a href="https://www.imdb.com/title/tt0388629/" target="_blank">Read More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--9 card-->
+    <div
+      class="p-6 max-w-sm mx-auto bg-white h-maxh-max shadow-xl md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div>
+        <img
+          class="rounded"
+          src="https://4kwallpapers.com/images/walls/thumbs/13342.jpeg"
+          alt=""
+        />
+      </div>
+      <div>
+        <div class="text-2xl font-medium text-black pt-5">
+          Jujutsu Kaisen
+          <p class="text-slate-500 text-base">
+            " Jujutsu Kaisen follows Yuji Itadori, a high schooler who joins
+            a secret organization of sorcerers to combat cursed spirits
+            after absorbing a powerful curse."
+          </p>
+          <button
+            class="bg-slate-400 rounded-md mt-4 p-1 text-base hover:text-slate-700"
+          >
+          <a href="https://www.imdb.com/title/tt12343534/" target="_blank">Read More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--10 card-->
+
+    <div
+      class="p-6 max-w-sm mx-auto bg-white h-max shadow-xl md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div>
+        <img
+          class="rounded"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9e9HvtQyYOQCoXNmZxmK1lZpkZ_nY-r9Q4BDUslEswZfmuGKo&s"
+          alt=""
+        />
+      </div>
+      <div>
+        <div class="text-2xl font-medium text-black pt-5">
+          Dragon Ball Z
+          <p class="text-slate-500 text-base">
+            "Dragon Ball Z follows Goku and his allies as they protect Earth
+            from powerful enemies, exploring themes of friendship,
+            perseverance, and the quest for ultimate strength".
+          </p>
+          <button
+            class="bg-slate-400 rounded-md mt-4 p-1 text-base hover:text-slate-700"
+          >
+          <a href="https://www.imdb.com/title/tt0214341/" target="_blank">Read More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--11 card-->
+
+    <div
+      class="p-6 max-w-sm mx-auto bg-white h-max shadow-xl md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div>
+        <img
+          class="rounded"
+          src="https://4kwallpapers.com/images/walls/thumbs_3t/4956.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <div class="text-2xl font-medium text-black pt-5">
+          Vegeta
+          <p class="text-slate-500 text-base">
+            "Vegeta, the Saiyan prince, is Goku's rival and ally. Proud,
+            strong, and determined, he evolves from a ruthless warrior to a
+            devoted protector of Earth".
+          </p>
+          <button
+            class="bg-slate-400 rounded-md mt-4 p-1 text-base hover:text-slate-700"
+          >
+          <a href="https://dragonball.fandom.com/wiki/Vegeta" target="_blank">Read More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--12 card-->
+    <div
+      class="p-6 max-w-sm mx-auto bg-white h-maxh-max shadow-xl md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div>
+        <img
+          class="rounded"
+          src="https://4kwallpapers.com/images/walls/thumbs_3t/14943.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <div class="text-2xl font-medium text-black pt-5">
+          Your Name
+          <p class="text-slate-500 text-base">
+            "Your Name is a Japanese anime about two teens who mysteriously
+            swap bodies, forming a deep bond across time and space,
+            exploring love, fate, and connection."
+          </p>
+          <button
+            class="bg-slate-400 rounded-md mt-4 p-1 text-base hover:text-slate-700"
+          >
+          <a href="https://www.imdb.com/title/tt5311514/" target="_blank">Read More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--13 card-->
+
+    <div
+      class="p-6 max-w-sm mx-auto bg-white h-max shadow-xl md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div>
+        <img
+          class="rounded"
+          src="https://4kwallpapers.com/images/walls/thumbs/15027.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <div class="text-2xl font-medium text-black pt-5">
+          Son Goku Dragon Ball Super
+          <p class="text-slate-500 text-base">
+            "Son Goku in Dragon Ball Super continues his quest for strength,
+            facing powerful foes like Beerus and Jiren, while protecting
+            Earth and striving for new transformations..
+          </p>
+          <button
+            class="bg-slate-400 rounded-md mt-4 p-1 text-base hover:text-slate-700"
+          >
+          <a href="https://dragonball.fandom.com/wiki/Goku" target="_blank">Read More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--14 card-->
+    <div
+      class="p-6 max-w-sm mx-auto bg-white h-max shadow-xl md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div>
+        <img
+          class="rounded"
+          src="https://4kwallpapers.com/images/walls/thumbs/15361.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <div class="text-2xl font-medium text-black pt-5">
+          Sukuna
+          <p class="text-slate-500 text-base">
+            "Sukuna, known as the King of Curses in Jujutsu Kaisen, is a
+            powerful and malevolent curse, once a human sorcerer, now
+            wreaking havoc with unmatched strength and abilities".
+          </p>
+          <button
+            class="bg-slate-400 rounded-md mt-4 p-1 text-base hover:text-slate-700"
+          >
+          <a href="https://jujutsu-kaisen.fandom.com/wiki/Sukuna" target="_blank">Read More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--15 card-->
+    <div
+      class="p-6 max-w-sm mx-auto bg-white h-max shadow-xl md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div>
+        <img
+          class="rounded"
+          src="https://4kwallpapers.com/images/walls/thumbs_3t/16481.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <div class="text-2xl font-medium text-black pt-5">
+          Satoru Gojo
+          <p class="text-slate-500 text-base">
+            " Satoru Gojo, a powerful sorcerer in Jujutsu Kaisen, is known
+            for his unmatched strength and control over the Limitless and
+            Six Eyes techniques, making him nearly invincible".
+          </p>
+          <button
+            class="bg-slate-400 rounded-md mt-4 p-1 text-base hover:text-slate-700"
+          >
+          <a href="https://jujutsu-kaisen.fandom.com/wiki/Satoru_Gojo" target="_blank">Read More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--16 card-->
+
+    <div
+      class="p-6 max-w-sm mx-auto bg-white h-max shadow-xl md:grid-cols-2 lg:grid-cols-3"
+    >
+      <div>
+        <img
+          class="rounded"
+          src="https://4kwallpapers.com/images/walls/thumbs/15325.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <div class="text-2xl font-medium text-black pt-5">
+          Itachi Uchiha
+          <p class="text-slate-500 text-base">
+            Itachi Uchiha, a skilled ninja from Konoha, is known for his
+            Sharingan and complex past. Initially perceived as a villain, he
+            reveals deep loyalty to his brother Sasuke and village,
+            sacrificing everything for peace.
+          </p>
+          <button
+            class="bg-slate-400 rounded-md mt-4 p-1 text-base hover:text-slate-700"
+          >
+          <a href="https://naruto.fandom.com/wiki/Itachi_Uchiha" target="_blank">Read More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Footer-->
+<div class="bg-slate-800 text-white py-5 px-8">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center">
+        <p class="text-sm">
+          Copyright © 2023 Jujutsu Kaisen. All rights reserved.
+        </p>
+      </div>
+      <div class="flex items-center">
+        <a
+          href="https://www.jujutsukaisen.com/terms-of-use"
+          class="text-sm hover:text-slate-700"
+        >
+          Terms of Use
+        </a>
+        <span class="mx-2 text-sm">|</span>
+        <a
+          href="https://www.jujutsukaisen.com/privacy-policy"
+          class="text-sm hover:text-slate-700"
+        >
+          Privacy Policy
+        </a>
+      </div>
+    </div>
+    </div>
+    <!-- <h1 class="text-white text-4xl m-6">Test</h1> -->
+
+  </body>
+  <script src="script.js"></script>
+</html>
